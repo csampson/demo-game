@@ -1,0 +1,21 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+.screen {
+  transition: background-color 250ms ease 500ms;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen[data-status='loading'] {
+  background-color: black;
+}
+
+.screen[data-status='ready'] {
+  background-color: gainsboro;
+}

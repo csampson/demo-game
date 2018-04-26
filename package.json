@@ -1,9 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "server": "node ./src/server/index.js"
+    "server": "node ./src/server/index.js",
+    "client": "http-server ./src/client -p 1337 -c -1"
   },
   "dependencies": {
+    "http-server": "^0.11.1",
     "uws": "^9.147.0"
   },
   "devDependencies": {

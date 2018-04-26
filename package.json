@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "server": "node ./src/server/index.js"
+  },
+  "dependencies": {
+    "uws": "^9.147.0"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}

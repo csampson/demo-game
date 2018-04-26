@@ -1,10 +1,13 @@
 body {
+  background-color: black;
   font-family: system-ui, sans-serif;
   margin: 0;
 }
 
 .screen {
-  transition: background-color 250ms ease 500ms;
+  transition: opacity 250ms ease 500ms;
+  background-color: gainsboro;
+  opacity: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -12,10 +15,6 @@ body {
   justify-content: center;
 }
 
-.screen[data-status='loading'] {
-  background-color: black;
-}
-
 .screen[data-status='ready'] {
-  background-color: gainsboro;
+  opacity: 1;
 }
